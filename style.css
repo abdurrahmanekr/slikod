@@ -1,0 +1,99 @@
+/* clear */
+body{
+	font-family: "myriad pro";
+}
+.no-space{
+	margin:0 !important;
+	padding:0 !important;
+}
+/*slikod grid*/
+.col-6, .col-4{
+  	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-6, .col-4, .img-content{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cont{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;	
+}
+@media (min-width: 992px) {
+	.col-6, .col-4{
+		float: left;
+	}
+	.col-6{
+    	width: 50%;
+	}
+	.col-4{
+		width: 33.33333333%;
+	}
+}
+
+
+/*slikod*/
+.news-header{
+	text-transform: capitalize;
+}
+.img-news{
+	padding: 1px !important;
+	margin-top: 2px !important;
+	height: 225px;
+	background-image: url(../img/pagani.jpg);
+	background-position: left !important;
+	background-size: cover !important;
+	background-origin: content-box !important;
+	background-repeat: no-repeat !important;
+	position: relative;
+}
+.img-container{
+	transition: 100ms;
+	line-height: 1.42857143;
+}
+.img-news:hover .blur{
+	height: 100%;
+}
+.img-news:hover .img-content{
+	display: block;
+	height: 150px;
+}
+.img-content{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+	height: 60px;
+	transition: 300ms;
+	white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.img-content p{
+	white-space: normal;
+	margin-top: 0;
+}
+.tie-date i{
+	margin-right: 7px;
+}
+.blur{
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background:rgba(0,0,0,0.5);
+	height: 0;
+	transition: 200ms;
+}
+.img-header{
+	font-size: 21px;
+}
